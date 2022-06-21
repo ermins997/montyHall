@@ -1,0 +1,64 @@
+body,html{
+    height:100%;
+}
+
+body{
+    background-color: azure;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    width: 700px;
+    height: 300px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.door{
+    width: 200px;
+    height: 280px;
+    background-color: indianred;
+    display: flex;
+    align-items: center;
+}
+
+.handle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: brown;
+}
+
+.selected{
+    background-color: orange;
+}
+
+.semafor{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: cadetblue;
+    box-shadow: 0 0 8px #ddd;
+    top: 30px;
+    left: 30px;
+    position: absolute;
+}
+
+.wins,.zeros {
+    width: 74px;
+    height: 90px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    color: blueviolet;
+}
+
