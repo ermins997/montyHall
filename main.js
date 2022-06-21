@@ -35,8 +35,8 @@ function selectDoor(){
     }
    
     function displayWinOrNot(door){
-        let dataId = door.getAtrribute('data-id');
-        (dataId == 'win') ? wins++ : zeros++;
+        let dataId = door.getAttribute('data-id');
+        (dataId == 'win') ? zeros++ : wins++;
         updateScore();
         reset();
     }
@@ -56,7 +56,8 @@ function selectDoor(){
     }
 
 function eliminateOne(){
-    let zeroDoors = document.querySelectorAll('[data-id="zero"]');
+    
+    let zeroDoors = document.querySelectorAll('[data-id]');
     if(zeroDoors[0].classList.contains('selected')){
         hideDoor(zeroDoors[1]);
     }
